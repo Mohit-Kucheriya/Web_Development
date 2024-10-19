@@ -54,3 +54,15 @@ function removeDuplicates(arr) {
     return unique
 }
 console.log(removeDuplicates(duplicateArr));
+
+/*
+Task 5: Flatten a Nested Array
+Write a function flattenArray(arr) that takes a nested array and returns a single flattened array.
+*/
+
+let arr = [1, 2, [3, 4], 5, [6, [7]]]
+function flattenArray(arr) {
+
+    return arr.flat(Infinity);
+}
+console.log(flattenArray(arr));
