@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS DOM challenges - Part 2</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+        body {
+            background-color: rgb(49, 49, 49);
+            color: white;
+            text-align: center;
+            font-family: "DM Sans", sans-serif;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .higlight {
+            background-color: yellow;
+            color: rgb(49, 49, 49);
+            font-weight: bold;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Example 6: Event Handling in the DOM -->
+    <section id="example6">
+        <h2 id="eventHandle">Event Handling in the DOM</h2>
+        <button id="clickMeButton">Click Me!</button>
+    </section>
+    <hr />
+
+    <!-- Example 7: Event Delegation -->
+    <section id="example7">
+        <h2>Event Delegation</h2>
+        <ul id="teaList">
+            <li class="teaItem">Green Tea</li>
+            <li class="teaItem">Black Tea</li>
+            <li class="teaItem">Herbal Tea</li>
+            <li class="teaItem">Matcha Tea</li>
+        </ul>
+        <p>Click on any Tea to select it.</p>
+    </section>
+    <hr />
+
+    <!-- Example 8: Form Handling -->
+    <section id="example8">
+        <h2>Form Handling</h2>
+        <form id="feedbackForm">
+            <label for="feedBackInput">Your Feedback:</label>
+            <input type="text" id="feedBackInput" placeholder="Enter your feedback here..." />
+            <button type="submit">Submit Feedback</button>
+        </form>
+        <p id="feedbackMessage"></p>
+    </section>
+    <hr />
+
+    <!-- Example 9: DOM Content Loaded -->
+    <section id="example9">
+        <h2>DOM Content Loaded</h2>
+        <p id="statusOfDOM">waiting for DOM content to load...</p>
+    </section>
+    <hr>
+
+    <!-- Example 10: CSS Classes Manipulation -->
+    <section id="example10">
+        <h2>CSS Classes Manipulation</h2>
+        <p id="descriptionText">This text will change color</p>
+        <button id="toggleHighlightButton">Toggle Highlight</button>
+    </section>
+
+    <script src="02_dom.js"></script>
+</body>
+
+</html>
