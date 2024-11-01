@@ -54,7 +54,6 @@ document.addEventListener("DOMContentLoaded", () => {
         descriptionToDisplay.textContent = weather[0].description;
         weatherInfo.classList.remove("hidden");
         errorMessage.classList.add("hidden");
-
     }
 
     // This function is called when there is an error in fetching the weather data i.e it will make sure that the weather info is hidden and the error message is displayed
