@@ -23,6 +23,27 @@
 
    i. git config --global user.email "Your Email" - sets the email of the user.
 
-   j. .gitignore - a file that specifies intentionally untracked files that git should ignore. The file name environments variable and this file holds the sensitive information like passwords, API keys, etc. 
+   j. .gitignore - a file that specifies intentionally untracked files that git should ignore. The file name environments variable and this file holds the sensitive information like passwords, API keys, etc.
 
    k. cat .gitconfig - shows the details of the git configuration.
+
+   l. git branch - shows the branches of the repository.
+
+5. How to create a branch, switch to a branch, and delete a branch?
+
+   a. git branch <branch-name> - creates a new branch.
+
+   b. git checkout <branch-name> - switches to the specified branch.
+
+   c. git branch -d <branch-name> - deletes the specified branch.
+
+   d. git switch <branch-name> - switches to the specified branch.
+
+6. Shortcuts -
+
+   a. git add . - adds all changes to the staging area.
+
+   b. git checkout -b <branch-name> - creates a new branch and switches to it.
+
+7. What is git conflict?
+   Answer - git conflict occurs when the same file is modified in two different branches. The file is modified in both the branches, and git cannot decide which change to keep. To resolve the conflict, you need to manually edit the file to remove the conflict.
