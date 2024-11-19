@@ -47,3 +47,28 @@
 
 7. What is git conflict?
    Answer - git conflict occurs when the same file is modified in two different branches. The file is modified in both the branches, and git cannot decide which change to keep. To resolve the conflict, you need to manually edit the file to remove the conflict.
+
+8. git diff - shows the differences between the last commit and the current commit.
+
+   a. git diff --staged - shows the differences between the last commit and the current commit, excluding untracked files.
+
+9. git stash - A common scenario is that we are working on a feature and want to switch to another
+   branch, but we forgot to commit our changes. In this case, we can use git stash to stash the changes away. This command will store the changes in a temporary area, so that we can switch to another branch and apply them later.
+
+   a. It's like a shelf where you can store your changes. So if you want to get the changes back, you can just take them out of the shelf.
+
+   b. git stash pop - pops the changes from the stash i.e. get the changes back.
+
+   c git stash pop - stash is not just limited to your branch and stash can be move from one branch to another.
+
+   d. git stash apply - Another command is git stash apply. This command will apply the changes from the stash to the current branch.
+   Syntax - git stash apply <stash-name>
+
+   e. git stash list - lists all the stashes.
+
+10. Commonly used git commands -
+    a. git checkout <hash> - switches to the specified commit. To check the hash of the commit, use git log.
+
+    b. Now to retrieve back or to go back from where we left off, we use git checkout main.
+
+    c. git reflog - reflects you back onto where you were previously. It just moves your head back to where you were.
