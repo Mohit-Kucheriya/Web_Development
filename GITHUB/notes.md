@@ -29,6 +29,8 @@
 
    l. git branch - shows the branches of the repository.
 
+   m. git commit -am "Commit Message" - used to add and commit at the same time.
+
 5. How to create a branch, switch to a branch, and delete a branch?
 
    a. git branch <branch-name> - creates a new branch.
@@ -72,3 +74,34 @@
     b. Now to retrieve back or to go back from where we left off, we use git checkout main.
 
     c. git reflog - reflects you back onto where you were previously. It just moves your head back to where you were.
+
+11. git rebase -
+    a. Its a command that lets you change the commit history of your branch.
+
+    b. NOTE - If you are on the main branch or the master branch, this command is not meant to be used.
+
+    c. This command is usually meant to be run from the side branch that we are.
+
+12. Commands related to github -
+    a. git remote -v - shows the remote repositories.
+
+    b. git remote add origin <url> - adds a remote repository.
+
+    c. git remote rename <old-name> <new-name> - renames a remote repository.
+
+    d. git remote rm <name> - removes a remote repository.
+
+    e. git push <remote> <branch> - pushes the changes to the remote repository. i.e. origin main.
+
+    f. git push -u origin main -
+    -u setup an upstream that allows you to run future commands without specifying the remote branch.
+
+    g. git push -
+    It pushes the code directly to github.
+
+    f. git clone <url> - clones the repository.
+
+    g. git fetch - 
+    git fetch brings in remote changes, but it doesn’t change your local files until you decide to merge them.
+
+    h. git pull - git fetch and git merge.
